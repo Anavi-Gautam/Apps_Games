@@ -2,41 +2,69 @@
 <html lang="en">
 
 <head>
+    <title>Bootstrap Example</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <section id="app">
-        <h1>Apps</h1>
-        <div class="line"></div>
-        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/tzC-IXciBBumOhI8Rab-mGRGfTspqLgnYOOaha4uA7k/embed"></iframe>
 
-        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/HNtpVIeH1w5bFK4uCq4LroJmc5ndRltmu_gM9tUKjqQ/embed"></iframe>
+    <div class="container">
 
-    </section>
+        <section id="app">
+            <h1>Apps</h1>
+            <div class="line"></div>
+            <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/AmAIOlod-80aGvVFcBdbfjebPGUlVaYjI8ECZcJtZks/embed"></iframe>
+            <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/U9AQsuLnTixFr5caYUBM9qmkuaPCvmuWblFMcUPrC14/embed"></iframe>
+        </section>
 
-    <section id="game">
-        <h1>Games</h1>
-        <div class="line"></div>
-        <a href="https://studio.code.org/projects/spritelab/1kJyzlRKIiF_rX7vB-HJle_IRs5FtfUP5DzOYJ6yx8c" target="_blank">
-            <img src="CAR_GAME.png">
-        </a>
+        <h2>Click on the games to explore.</h2>
+        <h5>These games are bulilt in game lab, click on the games to play.</h5>
 
-        <a href="https://studio.code.org/projects/spritelab/3NFn9PlcFTnu2EOjUeja4MOM_pK_zfaLj_xspO095yA" target="_blank">
-            <img src="FLOATING_AND_SINKING.png">
-        </a>
+        <div id="myCarousel" class="carousel slide">
 
-    </section>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <center>
+                        <a href="https://studio.code.org/projects/spritelab/FWGd3xdL_jW2-_WrEl3lO73pDYfkdPpeeE9sNro_uvo" target="_blank">
+                            <img src="Winne_Pooh.png" class="img-responsive">
+                        </a>
 
-    <section id="chatbot">
-        <h1>Chatbot</h1>
-        <div class="line"></div>
-        <iframe allow="microphone;" width="350px" height="500px" src="https://console.dialogflow.com/api-client/demo/embedded/8a1b4a2b-812a-4d13-b083-6083e4bc1b05">
-        </iframe>
-    </section>
+                        <div class="carousel-content">
+                            <p>Winne_Pooh</p>
+                        </div>
+                    </center>
+                </div>
+
+                <div class="item">
+                    <center>
+                        <a href="https://studio.code.org/projects/spritelab/1kJyzlRKIiF_rX7vB-HJle_IRs5FtfUP5DzOYJ6yx8c" target="_blank">
+                            <img src="Car_game.png" class="img-responsive">
+                        </a>
+
+                        <div class="carousel-content">
+                            <p>Car_game</p>
+                        </div>
+                    </center>
+                </div>
+
+
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+
+        </div>
+
+    </div>
 
 </body>
 
